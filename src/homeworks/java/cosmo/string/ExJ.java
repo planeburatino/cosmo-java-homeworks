@@ -10,6 +10,13 @@ package homeworks.java.cosmo.string;
 public class ExJ {
     public static void main(String[] args) {
         String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта" };
+        String longest = input[0];
 
+        for(String word : input){
+            if(word.length() > longest.length()){
+                longest = word;
+            }
+        }
+        System.out.println(longest);
     }
 }
